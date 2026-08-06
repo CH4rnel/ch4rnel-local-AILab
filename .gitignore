@@ -1,0 +1,50 @@
+# =========================
+# AI Models
+# =========================
+
+models/*.bin
+models/*.gguf
+models/*.safetensors
+
+ollama/models/
+
+
+# =========================
+# Open WebUI
+# =========================
+
+open-webui/data/
+open-webui/uploads/
+
+
+# =========================
+# RAG indexes
+# =========================
+
+knowledge/index/
+knowledge/vectorstore/
+
+
+# =========================
+# Large documents
+# =========================
+
+*.pdf
+*.zip
+*.tar.gz
+*.iso
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+
+# =========================
+# Python cache
+# =========================
+
+__pycache__/
+*.pyc
