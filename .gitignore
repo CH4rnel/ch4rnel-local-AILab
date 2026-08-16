@@ -1,50 +1,121 @@
-# =========================
-# AI Models
-# =========================
+# ============================================================
+# CH4rnel Local AI Lab
+# ============================================================
 
-models/*.bin
-models/*.gguf
-models/*.safetensors
+# ------------------------------------------------------------
+# Models / weights
+# ------------------------------------------------------------
 
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+models/**/weights/
+models/**/checkpoints/
+
+# HuggingFace local cache
+models/**/huggingface/
+models/**/cache/
+
+# Ollama data
+runtimes/ollama/data/
 ollama/models/
 
 
-# =========================
+# ------------------------------------------------------------
+# Training
+# ------------------------------------------------------------
+
+training/outputs/
+training/checkpoints/
+training/cache/
+
+# Large datasets
+training/datasets/raw/
+training/datasets/cache/
+
+# Python environments
+.venv/
+venv/
+.env/
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
 # Open WebUI
-# =========================
+# ------------------------------------------------------------
 
-open-webui/data/
-open-webui/uploads/
+runtimes/open-webui/data/
+runtimes/open-webui/uploads/
 
 
-# =========================
-# RAG indexes
-# =========================
+# ------------------------------------------------------------
+# RAG / vector databases
+# ------------------------------------------------------------
 
 knowledge/index/
 knowledge/vectorstore/
+knowledge/embeddings/
+*.sqlite
+*.db
 
 
-# =========================
-# Large documents
-# =========================
-
-*.pdf
-*.zip
-*.tar.gz
-*.iso
-
-
-# =========================
+# ------------------------------------------------------------
 # Logs
-# =========================
+# ------------------------------------------------------------
 
 *.log
+logs/
 
 
-# =========================
-# Python cache
-# =========================
+# ------------------------------------------------------------
+# Temporary files
+# ------------------------------------------------------------
 
-__pycache__/
-*.pyc
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+
+# ------------------------------------------------------------
+# OS
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+
+
+# ------------------------------------------------------------
+# Editors
+# ------------------------------------------------------------
+
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+
+# ------------------------------------------------------------
+# Secrets
+# ------------------------------------------------------------
+
+*.key
+*.pem
+*.crt
+
+secrets/
+credentials/
